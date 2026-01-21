@@ -19,6 +19,29 @@ This project demonstrates:
 - **CI/CD Pipelines**: GitHub Actions for automated testing and documentation deployment
 - **Package Publishing**: Complete workflow from development to PyPI publication
 
+## Project Structure
+```
+package_creation_tutorial/
+├── src/
+│   └── package_creation_tutorial/
+│       ├── __init__.py          # Package initialization
+│       ├── string_ops.py        # Core string manipulation functions
+│       └── main.py              # Demo script
+├── tests/
+│   └── test_string_ops.py       # Unit tests for string operations
+├── docs/
+│   ├── conf.py                  # Sphinx configuration
+│   ├── index.rst                # Documentation home page
+│   └── modules.rst              # API reference structure
+├── .github/
+│   └── workflows/
+│       ├── tests.yaml           # CI pipeline for automated testing
+│       └── sphinx_doc.yaml      # CI pipeline for documentation deployment
+├── pyproject.toml               # Project metadata and dependencies
+├── README.md                    # This file
+└── .pre-commit-config.yaml      # Pre-commit hook configuration
+```
+
 ## Features
 
 - String reversal
@@ -142,28 +165,7 @@ Open `docs/build/html/index.html` in your browser to view the documentation.
 
 Documentation is automatically deployed to GitHub Pages on every push to master: [View Documentation](https://yourusername.github.io/package_creation_tutorial/)
 
-## Project Structure
-```
-package_creation_tutorial/
-├── src/
-│   └── package_creation_tutorial/
-│       ├── __init__.py          # Package initialization
-│       ├── string_ops.py        # Core string manipulation functions
-│       └── main.py              # Demo script
-├── tests/
-│   └── test_string_ops.py       # Unit tests for string operations
-├── docs/
-│   ├── conf.py                  # Sphinx configuration
-│   ├── index.rst                # Documentation home page
-│   └── modules.rst              # API reference structure
-├── .github/
-│   └── workflows/
-│       ├── tests.yaml           # CI pipeline for automated testing
-│       └── sphinx_doc.yaml      # CI pipeline for documentation deployment
-├── pyproject.toml               # Project metadata and dependencies
-├── README.md                    # This file
-└── .pre-commit-config.yaml      # Pre-commit hook configuration
-```
+
 
 ## Continuous Integration
 
